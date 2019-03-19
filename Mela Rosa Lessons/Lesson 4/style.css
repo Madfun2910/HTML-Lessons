@@ -1,0 +1,85 @@
+/* Селлектор по идентификатору */
+body {
+    background-color: pink;
+    
+}
+.container {
+    width: 450px;
+    height: 500px;
+    margin: 10px;
+    text-align: left;
+}
+#block{
+    background:yellow;
+    color: black
+    
+}
+/* Селлектор по классу */
+.my-class{
+    color: crimson;
+   
+}
+
+/* Селлектор по элементу */
+
+p{  
+    color: blueviolet;
+    font-size: 40px;
+    
+    
+}
+p, button{
+    border: 1px solid black;
+    background: yellowgreen;
+}
+/* Селлектор для п внутри div */
+div > p {
+    font-size: 24px; 
+}
+
+/* Селлектор по  */
+div p {
+    background: yellow
+}
+/* Селлектор будет применятся ко всем button которые
+стоят после div */
+div+button{
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.my-class ~ p{
+    font-weight: 600;
+    font-size: 20px;
+}
+/* Для всех <a> с атрибутов шреф */
+a[href] {
+    color: darkred;
+    margin: 35px;
+}
+a[href="https://google.com"]{
+    font-size: 40px;
+}
+/* Для всех <a> с атрибутом name */
+a[name~=ru] {
+    background: black;
+}
+/* Для всех <a> с атрибутом шреф заканчивающемся .ru */
+a[href$=".ru"] {
+    cursor: help;
+    font-size: 34px;
+}
+/* Для всех <a> с атрибутом шреф заканчивающемся https */
+a[href^="https"] {
+    margin: 20px;
+}
+/* Для посещенной ссылки */
+a:visited {
+    color: darkgreen;
+}
+#block:hover {
+    padding: 20px;
+    background: red;
+    transition: 400ms;
+    
+}
